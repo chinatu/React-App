@@ -8,7 +8,7 @@ const InputArea = (props)=>{
     }
     return(
         <div className="form">
-            <input type="text" id="todoInput" onChange={handleChange} value={inputText}/>
+            <input type="text" placeholder="Enter Todo Item Here..." id="todoInput" onChange={handleChange} value={inputText}/>
             <button onClick={()=>{
                 props.onAdd(inputText);
                 setInputText("");
